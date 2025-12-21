@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-depl
+spec: # deployment spec
+  replicas: 2
+  selector:
+    matchLabels:
+      app: client # which pod to bind to this deployment
+  template: # pod spec
+    metadata:
+      name: client-pod # this name will be displayed when run $kubectl get pods
+      labels:
+        app: client # this label will be used when i will define a service for this pod
+    spec:
+      containers: # list of containers, here may be more than one container
+        - name: client-container
+          image: laithharb/web-app:v2 # image from docker hub
+
+# after run in autommatically will be created a replica set resource
+
+---
+# client service will be ClusterIP
+apiVersion: v1
+kind: Service
+metadata:
+  name: client-srv #  name of the service, displays wehen run $kubectl get svc
+spec:
+  type: ClusterIP
+  selector:
+    app: client # label of the pod to bind the service to it
+  ports:
+    - port: 3000 # a port of the pod, to comunicate into cluster
+      targetPort: 3000 # a port of my app to bind with nodePort

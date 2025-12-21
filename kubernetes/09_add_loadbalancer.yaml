@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-depl
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      project: myapp #this label is used to identify pods in load balancer bottom
+  template:
+    metadata:
+      labels:
+        project: myapp
+    spec:
+      containers:
+        - name: myapp-container
+          image: ag22222222/k8s:latest
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: myapp-svc
+  labels:
+    env: plod
+    owner: iam
+spec:
+  type: LoadBalancer
+  selector:
+    project: myapp #here i select with what pods to work, here with all pods with label project: myapp
+  ports:
+    - name: app-listerner
+      protocol: TCP
+      port: 8080 #load balancer port
+      targetPort: 8080 #pod port
+
+#to create a deployment with this load balancer
+#kubectl apply -f 09_add_loadbalancer.yaml

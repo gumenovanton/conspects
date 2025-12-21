@@ -1,0 +1,48 @@
+# create 3 pods with 2 containers
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-depl-multipod
+  labels:
+    app: multipod
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      project: myapp-multipod
+  template:
+    metadata:
+      labels:
+        project: myapp-multipod
+    spec:
+      containers:
+        - name: myapp-container
+          image: ag22222222/k8s:latest
+          ports:
+            - containerPort: 8080
+        - name: myapp-container2
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: myapp-service-multipod
+  labels:
+    env: dev
+    owner: iam
+spec:
+  selector:
+    project: myapp-multipod
+  ports:
+    - name: myapp-container
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+    - name: myapp-container2
+      protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer

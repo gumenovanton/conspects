@@ -1,0 +1,7 @@
+image:
+  repository: ag22222222/k8s
+  tag: latest
+replicaCount: 2
+service:
+  port: 8080
+  targetPort: 8080

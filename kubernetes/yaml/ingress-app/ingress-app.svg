@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   sodipodi:docname="ingress-app.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.089085298"
+     inkscape:cx="1116.9071"
+     inkscape:cy="392.88189"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect12"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect10"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect19"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect17"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect15"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect13"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g10"
+       transform="matrix(1.1736615,0,0,0.81721823,-330.95922,30.06588)"
+       inkscape:export-filename="ingress-app.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       style="fill:#ffffff;fill-opacity:1">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+         id="rect21"
+         width="1903.7699"
+         height="1072.17"
+         x="-569.07159"
+         y="-436.58997" />
+    </g>
+    <g
+       id="g13"
+       transform="translate(-578.98973,-34.567837)">
+      <rect
+         style="fill:#2d3139;stroke:#c0c0c0;stroke-width:0;stroke-dasharray:none"
+         id="rect1"
+         width="217.36108"
+         height="139.65712"
+         x="-341.79779"
+         y="78.67144" />
+      <text
+         xml:space="preserve"
+         style="font-size:35.2777px;font-family:Tasgsten;-inkscape-font-specification:Tasgsten;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#fefeff;fill-opacity:1;stroke:#c0c0c0;stroke-width:0;stroke-dasharray:none"
+         x="-275.62689"
+         y="160.91772"
+         id="text1"><tspan
+           sodipodi:role="line"
+           id="tspan1"
+           style="stroke-width:0"
+           x="-275.62689"
+           y="160.91772">browser</tspan></text>
+    </g>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.72884;stroke-dasharray:none"
+       id="rect2"
+       width="1675.8058"
+       height="706.0072"
+       x="-514.66144"
+       y="-237.82201" />
+    <g
+       id="g4"
+       transform="translate(137.52421,-8.050827)">
+      <rect
+         style="fill:#88aa00;stroke:#c0c0c0;stroke-width:0;stroke-dasharray:none"
+         id="rect3"
+         width="217.36108"
+         height="139.65712"
+         x="149.62727"
+         y="-171.50697" />
+      <text
+         xml:space="preserve"
+         style="font-size:35.2777px;font-family:Tasgsten;-inkscape-font-specification:Tasgsten;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#fefeff;fill-opacity:1;stroke:#c0c0c0;stroke-width:0;stroke-dasharray:none"
+         x="207.47266"
+         y="-91.095131"
+         id="text3"><tspan
+           sodipodi:role="line"
+           id="tspan3"
+           style="stroke-width:0"
+           x="207.47266"
+           y="-91.095131">client pod</tspan></text>
+    </g>
+    <g
+       id="g5"
+       transform="translate(133.324,-18.551363)">
+      <rect
+         style="fill:#0000ff;stroke:#c0c0c0;stroke-width:0;stroke-dasharray:none"
+         id="rect4"
+         width="217.36108"
+         height="139.65712"
+         x="153.82748"
+         y="286.31638" />
+      <text
+         xml:space="preserve"
+         style="font-size:35.2777px;font-family:Tasgsten;-inkscape-font-specification:Tasgsten;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#fefeff;fill-opacity:1;stroke:#c0c0c0;stroke-width:0;stroke-dasharray:none"
+         x="207.93343"
+         y="366.72821"
+         id="text4"><tspan
+           sodipodi:role="line"
+           id="tspan4"
+           style="stroke-width:0"
+           x="207.93343"
+           y="366.72821">server pod</tspan></text>
+    </g>
+    <g
+       id="g6"
+       transform="translate(665.77161,-18.551363)">
+      <g
+         id="g7"
+         transform="translate(59.795865)">
+        <rect
+           style="fill:#ff0000;stroke:#c0c0c0;stroke-width:0;stroke-dasharray:none"
+           id="rect5"
+           width="217.36108"
+           height="139.65712"
+           x="153.82748"
+           y="286.31638" />
+        <text
+           xml:space="preserve"
+           style="font-size:35.2777px;font-family:Tasgsten;-inkscape-font-specification:Tasgsten;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#fefeff;fill-opacity:1;stroke:#c0c0c0;stroke-width:0;stroke-dasharray:none"
+           x="228.07697"
+           y="366.72821"
+           id="text5"><tspan
+             sodipodi:role="line"
+             id="tspan5"
+             style="stroke-width:0"
+             x="228.07697"
+             y="366.72821">db pod</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g11"
+       transform="translate(168.05948,-18.551363)">
+      <rect
+         style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+         id="rect7"
+         width="217.36108"
+         height="139.65712"
+         x="415.21375"
+         y="286.31638" />
+      <text
+         xml:space="preserve"
+         style="font-size:35.2777px;font-family:Tasgsten;-inkscape-font-specification:Tasgsten;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#1a1a1a;fill-opacity:1;stroke:#c0c0c0;stroke-width:0;stroke-dasharray:none"
+         x="476.79852"
+         y="366.72821"
+         id="text7"><tspan
+           sodipodi:role="line"
+           id="tspan7"
+           style="fill:#1a1a1a;stroke-width:0"
+           x="476.79852"
+           y="366.72821">ClusterIP</tspan></text>
+    </g>
+    <g
+       id="g21"
+       transform="translate(-313.26807,223.66141)">
+      <rect
+         style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+         id="rect10"
+         width="217.36108"
+         height="139.65712"
+         x="-8.9702492"
+         y="-179.5578" />
+      <text
+         xml:space="preserve"
+         style="font-size:35.2777px;font-family:Tasgsten;-inkscape-font-specification:Tasgsten;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#1a1a1a;fill-opacity:1;stroke:#c0c0c0;stroke-width:0;stroke-dasharray:none"
+         x="60.834259"
+         y="-99.145973"
+         id="text10"><tspan
+           sodipodi:role="line"
+           id="tspan10"
+           style="fill:#1a1a1a;stroke-width:0"
+           x="60.834259"
+           y="-99.145973">Ingress</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:35.2777px;font-family:Tasgsten;-inkscape-font-specification:Tasgsten;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#1a1a1a;fill-opacity:1;stroke:#c0c0c0;stroke-width:0;stroke-dasharray:none"
+       x="99.33783"
+       y="-246.15347"
+       id="text13"><tspan
+         sodipodi:role="line"
+         id="tspan13"
+         style="fill:#1a1a1a;stroke-width:0"
+         x="99.33783"
+         y="-246.15347">CLUSTER</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       d="m 157.46464,-89.1 c 0,0 67.93875,0 67.93875,0"
+       id="path13"
+       inkscape:path-effect="#path-effect13"
+       inkscape:original-d="m 157.46464,-89.1 h 67.93875"
+       transform="translate(-554.87576,205.13491)" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       d="m 157.46464,-89.1 c 0,0 67.93875,0 67.93875,0"
+       id="path14"
+       inkscape:path-effect="#path-effect15"
+       inkscape:original-d="m 157.46464,-89.1 h 67.93875"
+       transform="translate(-854.48456,205.12943)" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       d="m 157.46464,-89.1 c 0,0 67.93875,0 67.93875,0"
+       id="path15"
+       inkscape:path-effect="#path-effect17"
+       inkscape:original-d="m 157.46464,-89.1 h 67.93875"
+       transform="translate(352.85564,428.77145)" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       d="m 157.46464,-89.1 c 0,0 67.93875,0 67.93875,0"
+       id="path17"
+       inkscape:path-effect="#path-effect19"
+       inkscape:original-d="m 157.46464,-89.1 h 67.93875"
+       transform="translate(649.85565,428.77145)" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       d="m -100.17982,40.106137 82.788748,-76.10625"
+       id="path20" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       d="m -99.066067,189.34864 80.932491,73.5075"
+       id="path21" />
+    <g
+       id="g12"
+       transform="translate(-556.30242,205.11005)">
+      <rect
+         style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+         id="rect11"
+         width="217.36108"
+         height="139.65712"
+         x="-65.710785"
+         y="-161.00644" />
+      <text
+         xml:space="preserve"
+         style="font-size:35.2777px;font-family:Tasgsten;-inkscape-font-specification:Tasgsten;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#1a1a1a;fill-opacity:1;stroke:#c0c0c0;stroke-width:0;stroke-dasharray:none"
+         x="-26.350893"
+         y="-80.594612"
+         id="text11"><tspan
+           sodipodi:role="line"
+           id="tspan11"
+           style="fill:#1a1a1a;stroke-width:0"
+           x="-26.350893"
+           y="-80.594612">LoadBalanser</tspan></text>
+    </g>
+    <g
+       id="g8">
+      <rect
+         style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+         id="rect6"
+         width="217.36108"
+         height="139.65712"
+         x="-8.9702492"
+         y="-179.5578" />
+      <text
+         xml:space="preserve"
+         style="font-size:35.2777px;font-family:Tasgsten;-inkscape-font-specification:Tasgsten;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#1a1a1a;fill-opacity:1;stroke:#c0c0c0;stroke-width:0;stroke-dasharray:none"
+         x="60.834259"
+         y="-99.145973"
+         id="text6"><tspan
+           sodipodi:role="line"
+           id="tspan6"
+           style="fill:#1a1a1a;stroke-width:0"
+           x="60.834259"
+           y="-99.145973">Ingress</tspan></text>
+    </g>
+    <g
+       id="g9"
+       transform="translate(0,447.32281)">
+      <rect
+         style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+         id="rect8"
+         width="217.36108"
+         height="139.65712"
+         x="-8.9702492"
+         y="-179.5578" />
+      <text
+         xml:space="preserve"
+         style="font-size:35.2777px;font-family:Tasgsten;-inkscape-font-specification:Tasgsten;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#1a1a1a;fill-opacity:1;stroke:#c0c0c0;stroke-width:0;stroke-dasharray:none"
+         x="60.834259"
+         y="-99.145973"
+         id="text8"><tspan
+           sodipodi:role="line"
+           id="tspan8"
+           style="fill:#1a1a1a;stroke-width:0"
+           x="60.834259"
+           y="-99.145973">Ingress</tspan></text>
+    </g>
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       d="m 157.46464,-89.1 c 0,0 67.93875,0 67.93875,0"
+       id="path9"
+       inkscape:path-effect="#path-effect10"
+       inkscape:original-d="m 157.46464,-89.1 h 67.93875"
+       transform="translate(57.121731,428.77145)" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       d="m 157.46464,-89.1 c 0,0 67.93875,0 67.93875,0"
+       id="path10"
+       inkscape:path-effect="#path-effect12"
+       inkscape:original-d="m 157.46464,-89.1 h 67.93875"
+       transform="translate(57.121731,-20.62924)" />
+  </g>
+</svg>

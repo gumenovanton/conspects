@@ -1,0 +1,24 @@
+# a persistant volume claim for my mongo database
+# here i am talking to the kubernetes, give me 1Gb of storage for my mongo database
+# the kubernetes looks what it have and gives me a persistent storage somewhere in the cluster
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mongo-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce # ReadWriteOnce - only one pod can access the volume at a time
+  resources:
+    requests: # my request for storage
+      storage: 1Gi
+# connection to the mongo db in mongo deployment
+
+# to watch all storage locations
+# $kubectl get pv
+
+# to watch all persistent volumes claims
+# $kubectl get pvc
+
+# when i create a persistent volume claim, the kubernetes will create a StorageClass
+# every cloud provider has its own storage class
+# in docs has many variants

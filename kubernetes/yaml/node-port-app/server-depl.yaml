@@ -1,0 +1,38 @@
+# deployment defines how our pods should be leave, how many replicas must be running, and how to update them
+apiVersion: apps/v1 # deployment exists in the apps/v1 api
+kind: Deployment
+metadata:
+  name: server-depl
+spec: # spec for deployment
+  replicas: 3 # number of replicas to run
+  selector:
+    matchLabels:
+      app: server # the label of the server pod to attach deployment to it
+  template: # this is the pod that a want to run via deployment
+    metadata:
+      labels:
+        app: server
+    spec: # spec for pod
+      containers:
+        - name: server
+          image: laithharb/server:v1
+
+# after run in autommatically will be created a replica set resource
+
+---
+# this to communicate the world with server
+apiVersion: v1
+kind: Service
+metadata:
+  name: server-svc
+spec:
+  type: NodePort
+  selector:
+    app: server
+  ports:
+    - protocol: TCP
+      port: 3000 # expose server port to access the server for other pod
+      targetPort: 3000 # port of server to listen
+      nodePort: 30005 # external port to access the service from outside the cluster
+
+# check it via http://192.168.49.2:30005/api

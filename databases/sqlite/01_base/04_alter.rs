@@ -1,0 +1,17 @@
+//>> ALTER 
+
+//<< RENAME TABLE
+ALTER TABLE users 
+RENAME TO people;
+
+//<< ADD COLUMN
+ALTER TABLE users
+ADD COLUMN email TEXT NOT NULL;
+
+//<< RENAME COLUMN
+ALTER TABLE users
+RENAME COLUMN email TO login;
+
+//<< DELETE COLUMN
+ALTER TABLE users
+DROP COLUMN login;

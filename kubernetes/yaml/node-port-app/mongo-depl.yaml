@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo-depl
+spec: # spec of a deployment
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongo # which pod to deploy
+  template: # pod template
+    metadata:
+      labels:
+        app: mongo # pod lable
+    spec: # spec of a pod
+      containers:
+        - name: mongo
+          image: mongo
+
+# after run in autommatically will be created a replica set resource
+
+---
+# this to communicate pods in cluster with mongo
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo-svc # this name will be used by the kubernetes dns service, if i want to connect to the mongo db, i must use this name instead of the pod ip and port
+spec:
+  type: ClusterIP
+  selector:
+    app: mongo # which pod to attach to server
+  ports:
+    - name: mongo
+      port: 27017 # expose modgo default port to be accessible for othe pods
+      targetPort: 27017 # mongo default port
+
+# it all apps that wants to connect to the mongo
+# instead of using a url i need to write mongo-svc, this is the dns name of the ClusterIP
+# and if a mongo-pod will be recrated
+# a kubernetes dns service will automatically attach the new pod ip to the dns mongo-svc

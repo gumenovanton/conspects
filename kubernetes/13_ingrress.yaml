@@ -1,0 +1,43 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-hosts
+  annotations:
+    kubernetes.io/ingress.class: contour
+spec:
+  rules:
+    - host: main.com #your-hostname
+      http:
+        paths:
+          - path: / #if any goes to / go to main service
+            pathType: Prefix
+            backend:
+              service:
+                name: main #deployment-name
+                port:
+                  number: 8080
+          - path: /somePage #if any goes to /somePage go to another somePageBackend service
+            pathType: Prefix
+            backend:
+              service:
+                name: somePageBackennd #deployment-name
+                port:
+                  number: 8080
+    - host: main2.com #your-hostname
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: main2 #deployment-name
+                port:
+                  number: 8080
+# to apply it
+# $kubectl apply -f 13_ingrress.yaml
+
+# to watch an ingress
+# $kubectl get ingress ingress-hosts -w
+
+# or
+# $kubectl describe ingress ingress-hosts

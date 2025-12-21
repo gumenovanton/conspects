@@ -1,0 +1,30 @@
+apiVersion: networking.k8s.io/v1 # nginx ingress controller lives here
+kind: Ingress
+metadata:
+  name: ingress-svc
+spec:
+  ingressClassName: nginx # i found it in the docs
+  rules:
+    - host: habittracker.com # i add this dns to /etc/hosts with ip of minikube to use in ingress
+      http: # protocol
+        paths:
+          - path: /api # path for api
+            pathType: Prefix # there are three types of path types: Prefix, Exact, ImplementationSpecific, watch docs, Prefix means that this path and this path with anything after it will be routed to the backend service
+            backend:
+              service:
+                name: server-srv # server service name
+                port:
+                  number: 3000 # port number for server service
+          - path: / # path for client and anything after it, exept /api....
+            pathType: Prefix
+            backend:
+              service:
+                name: client-srv # client service name
+                port:
+                  number: 3000 # port number for client service
+
+# to enable nginx ingress controller
+# $minikube addons enable ingress
+
+# to watch pods in ingress namespace
+# $kubectl get pods -n ingress-nginx

@@ -1,0 +1,52 @@
+# deployment defines how our pods should be leave, how many replicas must be running, and how to update them
+apiVersion: apps/v1 # deployment exists in the apps/v1 api
+kind: Deployment
+metadata:
+  name: server-depl
+spec: # spec for deployment
+  replicas: 3 # number of replicas to run
+  selector:
+    matchLabels:
+      app: server # the label of the server pod to attach deployment to it
+  template: # this is the pod that a want to run via deployment
+    metadata:
+      labels:
+        app: server
+    spec: # spec for pod
+      containers:
+        - name: server
+          image: laithharb/server:v2
+          resources: # i can set requests(how many resources the container will use in my expectations) and limits(if greater than kill a container and restart it)
+            # if i do not set the resources, kubernetes will always move the container to another node, when it increased the node resources, and mark the QoSClass of the pod as BestEffort, i can see it when i run kubectl describe pod <pod-name>
+            # if i set only requests, kubernetes will also move the container to another node, but rarely, and mark the QoSClass of the pod as Burstable, i can see it when i run kubectl describe pod <pod-name>
+            # if i set both requests and limits, kubernetes will not move the container to another node, but it will kill the container if it exceeds the limits, and mark the QoSClass of the pod as Guaranteed, i can see it when i run kubectl describe pod <pod-name>
+            limits: # never exceed this limits
+              memory: 128Mi
+              cpu: 500m
+            # requests: # my expectations
+            #   memory: 64Mi
+            #   cpu: 250m
+          env: # that how i can set environment variables for the server container, not the sensitive ones, all sensitive variables should be set in secret
+            - name: MONGO_URL
+              # value: mongodb://mongo-srv:27017 # not sensitive data defines like this
+              valueFrom: # here we can set environment variables from secret
+                secretKeyRef:
+                  name: mongo-credentials
+                  key: mongo-url
+
+# after run in autommatically will be created a replica set resource
+
+---
+# server service will be ClusterIP
+apiVersion: v1
+kind: Service
+metadata:
+  name: server-srv
+spec:
+  type: ClusterIP
+  selector:
+    app: server
+  ports:
+    - protocol: TCP
+      port: 3000 # expose server port to access the server for other pod
+      targetPort: 3000 # port of server to listen

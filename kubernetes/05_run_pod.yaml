@@ -1,0 +1,23 @@
+apiVersion: v1 #version of the API
+kind: Pod #type of the resource
+metadata:
+  name: apptolearnkube #name of the pod
+  labels: #labels for the pod will be used to identify the pod and in deployment
+    env: dev
+    app: apptolearnkube
+    tier:
+    owner: ag22222222
+spec:
+  containers:
+    - name: apptolearnkube
+      image: ag22222222/k8s:latest #only this image i can change withowt destroing an app and run apply again and new image will be pulled automatically and run
+      ports:
+        - containerPort: 8080
+# to run the pod
+# kubectl apply -f 05_run_pod.yml
+
+# to delete the pod
+# kubectl delete -f 05_run_pod.yml
+
+# no attach an external port to the pod
+# kubectl port-forward apptolearnkube 8080:8080
